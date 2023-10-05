@@ -7,6 +7,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import com.askldfghj.previewsample.ui.theme.PreviewSampleTheme
 
 @Composable
 internal fun SampleScreen(modifier: Modifier = Modifier) {
@@ -19,5 +21,13 @@ internal fun SampleScreen(modifier: Modifier = Modifier) {
         ) {
             Text(text = "Hello Android!")
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun SampleScreenPreview() {
+    PreviewSampleTheme {
+        SampleScreen()
     }
 }
