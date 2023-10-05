@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.askldfghj.previewsample.ui.preview.ThemePreviews
 import com.askldfghj.previewsample.ui.theme.PreviewSampleTheme
 
 @Composable
@@ -34,9 +35,9 @@ internal fun SampleScreen(modifier: Modifier = Modifier) {
 
 }
 
-@Preview(showBackground = true)
+@ThemePreviews
 @Composable
-fun SampleScreenPreview() {
+internal fun SampleScreenPreview() {
     PreviewSampleTheme {
         SampleScreen()
     }
