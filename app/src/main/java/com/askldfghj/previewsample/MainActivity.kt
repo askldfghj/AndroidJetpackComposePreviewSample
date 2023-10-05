@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.askldfghj.previewsample.ui.screen.SampleScreen
 import com.askldfghj.previewsample.ui.theme.PreviewSampleTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,9 +19,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             PreviewSampleTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
-                }
+                SampleScreen(Modifier)
             }
         }
     }
